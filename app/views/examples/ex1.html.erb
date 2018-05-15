@@ -1,4 +1,71 @@
-<div>
-  <%= image_tag "drums.jpg", class: 'image-resize' %>
+<div class="container">
+    <div class="row keys">
+        <div class="col-sm-offset-1 col-sm-1 key">
+          <kbd>A</kbd>
+        </div>
+        <div class="col-sm-1 key">
+          <kbd>S</kbd>
+        </div>
+        <div class="col-sm-1 key">
+          <kbd>D</kbd>
+        </div>
+        <div class="col-sm-1 key">
+          <kbd>F</kbd>
+        </div>
+        <div class="col-sm-1 key">
+          <kbd>G</kbd>
+        </div>
+        <div class="col-sm-1 key">
+          <kbd>H</kbd>
+        </div>
+        <div class="col-sm-1 key">
+          <kbd>J</kbd>
+        </div>
+        <div class="col-sm-1 key">
+          <kbd>K</kbd>
+        </div>
+        <div class="col-sm-1 key">
+          <kbd>L</kbd>
+        </div>
+    </div>
 </div>
+
+<!-- each div for every box has a 
+data-key attribute, and a class of key
+
+playing class in css occurs when 
+you press button
+
+div class keys containing 
+all divs with class of key
+
+<audio data-key src sound balah blah <audio
+
+window.addeventlistener('keydown', function(
+event) {
+  const audio = document.queryselector(
+  `audio[data-key="${e.keycode}"]`)
+  audio.currentTime = 0
+  audio.play();
+
+
+
+})
+
+const keys = document.queryselectorall(.key)
+
+keys.forEach(key => key.addeventlistener(transitionend
+, remove transition))
+
+function removetransition(e){
+  if e.propertyname !== transform return
+}
+
+css
+transition:all 0.07s
+
+transform: scale(1.1)
+border color
+box shadow -->
+
 
