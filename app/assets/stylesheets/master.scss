@@ -16,9 +16,23 @@ body.homepage {
   background-size: cover;
   height: 100%;
   overflow: hidden;
+  font-family: sans-serif;
 }
 
+.container {
+  margin-top: 40vh;
+}
 
+.key {
+  font-size: 1.5rem;
+
+}
+
+kbd {
+  padding: 1rem 2rem;
+  background-color: rgba(0,0,0,.5);
+  border: 3px solid black; 
+}
 
 /*body {
   background-color: none;
