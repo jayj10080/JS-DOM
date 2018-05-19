@@ -29,9 +29,24 @@ body.homepage {
 }
 
 kbd {
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 1.5rem;
   background-color: rgba(0,0,0,.5);
   border: 3px solid black; 
+}
+
+.sound {
+  display: block;
+  margin-left: 18px;
+  color: #ffc600;
+  font-size: 12px;
+  text-align: center;
+  margin-top: -4px;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
 }
 
 /*body {

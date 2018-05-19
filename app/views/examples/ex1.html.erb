@@ -39,19 +39,91 @@
 
 <body class="homepage">
   <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-sm-offset-1 col-sm-1 key"><kbd>A</kbd></div>
-        <div class="col-sm-1 key"><kbd>S</kbd></div>
-        <div class="col-sm-1 key"><kbd>D</kbd></div>
-        <div class="col-sm-1 key"><kbd>F</kbd></div>
-        <div class="col-sm-1 key"><kbd>G</kbd></div>
-        <div class="col-sm-1 key"><kbd>H</kbd></div>
-        <div class="col-sm-1 key"><kbd>J</kbd></div>
-        <div class="col-sm-1 key"><kbd>K</kbd></div>
-        <div class="col-sm-1 key"><kbd>L</kbd></div>
+    <div class="row justify-content-center keys">
+        <div class="col-sm-offset-1 col-sm-1 key">
+          <kbd>A</kbd>
+          <span class="sound">clap</span>
+        </div>
+        <div class="col-sm-1 key">
+          <kbd>S</kbd>
+          <span class="sound">hihat</span>
+        </div>
+        <div class="col-sm-1 key">
+          <kbd>D</kbd>
+          <span class="sound">kick</span>
+        </div>
+        <div class="col-sm-1 key">
+          <kbd>F</kbd>
+          <span class="sound">openhat</span>
+        </div>
+        <div class="col-sm-1 key">
+          <kbd>G</kbd>
+          <span class="sound">boom</span>
+        </div>
+        <div class="col-sm-1 key">
+          <kbd>H</kbd>
+          <span class="sound">ride</span>
+        </div>
+        <div class="col-sm-1 key">
+          <kbd>J</kbd>
+          <span class="sound">snare</span>
+        </div>
+        <div class="col-sm-1 key">
+          <kbd>K</kbd>
+          <span class="sound">tom</span>
+        </div>
+        <div class="col-sm-1 key">
+          <kbd>L</kbd>
+          <span class="sound">tink</span>
+        </div>
     </div>
   </div>
 </body>
+
+<script type="text/javascript">
+  var audiotag = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+</script>
+
+`audio[data-key="${e.keyCode}"]`
+
+<!-- <div class="keys">
+    <div data-key="65" class="key">
+      <kbd>A</kbd>
+      <span class="sound">clap</span>
+    </div>
+    <div data-key="83" class="key">
+      <kbd>S</kbd>
+      <span class="sound">hihat</span>
+    </div>
+    <div data-key="68" class="key">
+      <kbd>D</kbd>
+      <span class="sound">kick</span>
+    </div>
+    <div data-key="70" class="key">
+      <kbd>F</kbd>
+      <span class="sound">openhat</span>
+    </div>
+    <div data-key="71" class="key">
+      <kbd>G</kbd>
+      <span class="sound">boom</span>
+    </div>
+    <div data-key="72" class="key">
+      <kbd>H</kbd>
+      <span class="sound">ride</span>
+    </div>
+    <div data-key="74" class="key">
+      <kbd>J</kbd>
+      <span class="sound">snare</span>
+    </div>
+    <div data-key="75" class="key">
+      <kbd>K</kbd>
+      <span class="sound">tom</span>
+    </div>
+    <div data-key="76" class="key">
+      <kbd>L</kbd>
+      <span class="sound">tink</span>
+    </div>
+</div> -->
 
 
   
