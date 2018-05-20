@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
   root 'examples#home'
-  get 'ex1', to: 'examples#ex1'
+  get 'drum', to: 'examples#drum'
+  get 'clock', to: 'examples#clock'
 end
