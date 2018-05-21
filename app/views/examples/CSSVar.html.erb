@@ -1,0 +1,119 @@
+<body class='cssvar'>
+  
+  <h2 class="css-margin">Update CSS variables with <span class="color-JS">JS</span></h2>
+
+  <div class="inputs">
+    <label for="spacing">Spacing:</label>
+    <input type="range" name="spacing" id="spacing" min="10" max="200" value="10" data-sizing="px">
+
+    <label for="blur">Blur:</label>
+    <input type="range" name="blur" id="blur" min="0" max="25" value="10" data-sizing="px">
+
+    <label for="base">Base Color</label>
+    <input type="color" name="base" id="base" value="#ffc600">
+  </div>
+
+  <%= image_tag("cssvar.jpg", class: "css-image") %>
+
+
+<style type="text/css">
+
+  html {
+    --base: #ffc600;
+    --spacing: 10px;
+    --blur: 10px;
+  }
+  
+  body.cssvar {
+    color: white;
+    background-color: #193549;
+  }
+
+  .css-margin {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 70px;
+    color: white;
+  }
+
+  input[type=range]::-webkit-slider-runnable-track {
+    background: white;
+  }
+
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: white;
+  }
+
+  input[type=range]::-moz-range-track {
+    background: white;
+  }
+
+  input[type=range]::-ms-fill-lower {
+    background: white;
+  }
+
+  input[type=range]:focus::-ms-fill-lower {
+    background: white;
+  }
+
+  input[type=range]::-ms-fill-upper {
+    background: white;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: white;
+  }
+
+  .inputs {
+    text-align: center;
+  }
+
+  #spacing {
+    padding-top: 12px;
+  }
+
+  #blur {
+    padding-top: 12px;
+  }
+
+  .inputs label {
+    font-size: 30px;
+    font-weight: lighter;
+  }
+
+  .inputs input {
+    cursor: pointer;
+  }
+
+  .css-image {
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+    width: 700px;
+    height: auto;
+    margin: 30px auto;
+    display: block;
+  }
+
+  .color-JS {
+    color: var(--base);
+  }
+
+</style>
+
+<script type="text/javascript">
+  const inputs = document.querySelectorAll('.inputs input')
+
+  function handleUpdate() {
+    const suffix = this.dataset.sizing || '';
+    document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+  }
+
+  inputs.forEach(input => input.addEventListener('change', handleUpdate));
+  inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
+
+  
+
+
+</script>
+
+</body>

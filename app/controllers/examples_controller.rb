@@ -8,4 +8,7 @@ class ExamplesController < ApplicationController
 
   def clock
   end
+
+  def CSSVar
+  end
 end
