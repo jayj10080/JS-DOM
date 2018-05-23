@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get 'drum', to: 'examples#drum'
   get 'clock', to: 'examples#clock'
   get 'CSSVar', to: 'examples#CSSVar'
+  get 'arrays', to: 'examples#arrays'
 end

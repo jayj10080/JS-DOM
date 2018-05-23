@@ -11,4 +11,7 @@ class ExamplesController < ApplicationController
 
   def CSSVar
   end
+
+  def arrays
+  end
 end
