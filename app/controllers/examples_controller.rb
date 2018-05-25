@@ -14,4 +14,7 @@ class ExamplesController < ApplicationController
 
   def arrays
   end
+
+  def flex
+  end
 end

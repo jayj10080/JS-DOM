@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get 'clock', to: 'examples#clock'
   get 'CSSVar', to: 'examples#CSSVar'
   get 'arrays', to: 'examples#arrays'
+  get 'flex', to: 'examples#flex'
 end
