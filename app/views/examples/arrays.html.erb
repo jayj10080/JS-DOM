@@ -27,11 +27,13 @@
     const bornIn1500s = inventors.filter(person => person.year >= 1500 && person.year <= 1599);
     <br>
     <br>
-    Array.prototype.map()
+    2. Create a list of Boulevards in Paris that contain 'de' anywhere in the name.
     <br>
-    2. Give us an array of the inventor first and last names.
+    https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
     <br>
-    const firstAndLastName = inventors.map(name => name.first + ' ' + name.last);
+    var boulevard = Array.from(document.querySelectorAll('.mw-category li'));
+    <br>
+    var filteredBoulevards = boulevard.map(name => name.textContent).filter(name => name.includes('de'));
     <br>
     <br>
     Array.prototype.sort()
@@ -43,23 +45,52 @@
     <br>
     4. Sort the inventors by years lived.
     <br>
+    const sortedInventors = inventors.sort(function(a, b) {
+    const first = a.passed - a.year;
+    const second = b.passed - b.year;
+    return first > second ? -1 : 1;
+    });
     <br>
-    5. Create a list of Boulevards in Paris that contain 'de' anywhere in the name.
     <br>
-    https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+    5. Sort the people alphabetically by last name.
+    <br>
+    const sortedInventors = people.sort(function(a, b){
+    const [aFirst, aLast] = a.split(', ');
+    const [bFirst, bLast] =  b.split(', ');
+    return aLast > bLast ? 1 : -1;
+    });
     <br>
     <br>
-    6. Sort the people alphabetically by last name.
+    Array.prototype.map()
+    <br>
+    6. Give us an array of the inventor first and last names.
+    <br>
+    const firstAndLastName = inventors.map(name => name.first + ' ' + name.last);
     <br>
     <br>
     Array.prototype.reduce()
     <br>
     7. How many years did all the inventors live?
     <br>
+    const totalYears = inventors.reduce((total, inventor) => {
+    return total + (inventor.passed - inventor.year);
+    }, 0);
+    <br>
     <br>
     8. Sum up the instances of each of these.
     <br>
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck', 'pogostick'];
+    <br>
+    var countedNames = data.reduce(function (allData, data) { 
+    if (data in allData) {
+      allData[data]++;
+    }
+    else {
+      allData[data] = 1;
+    }
+    return allData;
+    }, {});
+    <br>
     <br>
     <br>
 </div>
