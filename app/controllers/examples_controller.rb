@@ -17,4 +17,7 @@ class ExamplesController < ApplicationController
 
   def flex
   end
+
+  def search
+  end
 end

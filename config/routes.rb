@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get 'CSSVar', to: 'examples#CSSVar'
   get 'arrays', to: 'examples#arrays'
   get 'flex', to: 'examples#flex'
+  get 'search', to:'examples#search'
 end
