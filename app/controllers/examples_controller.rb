@@ -20,4 +20,7 @@ class ExamplesController < ApplicationController
 
   def search
   end
+
+  def arrays2
+  end
 end

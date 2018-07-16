@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get 'arrays', to: 'examples#arrays'
   get 'flex', to: 'examples#flex'
   get 'search', to:'examples#search'
+  get 'arrays2', to: 'examples#arrays2'
 end
