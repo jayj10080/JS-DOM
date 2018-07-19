@@ -17,6 +17,8 @@
     return currentYear - person.year >= 19;
   })</p>
   <p>True</p>
+  <p>Is every person 19 or older?</p>
+  <p>False</p>
 <script type="text/javascript">
   const people = [
     { name: 'Wes', year: 1988 },
@@ -40,4 +42,10 @@
     return currentYear - person.year >= 19;
   })
   console.log(isAdult);
+
+  const allAdult = people.every(function(person) {
+    const currentYear = (new Date()).getFullYear();
+    return currentYear - person.year >= 19;
+  })
+  console.log(allAdult);
 </script>
