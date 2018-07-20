@@ -19,6 +19,12 @@
   <p>True</p>
   <p>Is every person 19 or older?</p>
   <p>False</p>
+  <p>Find the comment with the id of 823423</p>
+  <p>const comment = comments.find(function(comment) {
+    if(comment.id === 823423) {
+      return true;
+    }
+  });</p>
 <script type="text/javascript">
   const people = [
     { name: 'Wes', year: 1988 },
@@ -48,4 +54,11 @@
     return currentYear - person.year >= 19;
   })
   console.log(allAdult);
+
+  const comment = comments.find(function(comment) {
+    if(comment.id === 823423) {
+      return true;
+    }
+  });
+  console.log(comment);
 </script>
