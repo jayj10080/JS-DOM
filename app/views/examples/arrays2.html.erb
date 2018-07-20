@@ -20,11 +20,7 @@
   <p>Is every person 19 or older?</p>
   <p>False</p>
   <p>Find the comment with the id of 823423</p>
-  <p>const comment = comments.find(function(comment) {
-    if(comment.id === 823423) {
-      return true;
-    }
-  });</p>
+  <p>const comment = comments.find(comment => comment.id === 823423);</p>
 <script type="text/javascript">
   const people = [
     { name: 'Wes', year: 1988 },
@@ -49,16 +45,23 @@
   })
   console.log(isAdult);
 
+
+// .every
   const allAdult = people.every(function(person) {
     const currentYear = (new Date()).getFullYear();
     return currentYear - person.year >= 19;
   })
   console.log(allAdult);
 
-  const comment = comments.find(function(comment) {
-    if(comment.id === 823423) {
-      return true;
-    }
-  });
+// .find
+  const comment = comments.find(comment => comment.id === 823423);
+    
   console.log(comment);
+
+  // .findIndex
+  // Find the comment with this id and delete the comment
+  const index = comments.findIndex(comment => comment.id === 823423);
+  console.log(index);
+
+  // comments.splice(index, 1);
 </script>
