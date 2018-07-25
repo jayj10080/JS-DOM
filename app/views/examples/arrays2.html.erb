@@ -17,10 +17,26 @@
     return currentYear - person.year >= 19;
   })</p>
   <p>True</p>
+  <br>
   <p>Is every person 19 or older?</p>
   <p>False</p>
+  <p>
+    const allAdult = people.every(function(person) {
+    const currentYear = (new Date()).getFullYear();
+    return currentYear - person.year >= 19;
+  })
+  </p>
+  <br>
   <p>Find the comment with the id of 823423</p>
   <p>const comment = comments.find(comment => comment.id === 823423);</p>
+  <br>
+  <p>Find the comment with id 823423 and delete the comment</p>
+  <p>
+    const index = comments.findIndex(comment => comment.id === 823423);
+  console.log(index);
+
+  comments.splice(index, 1);
+  </p>
 <script type="text/javascript">
   const people = [
     { name: 'Wes', year: 1988 },
