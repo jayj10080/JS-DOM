@@ -23,4 +23,7 @@ class ExamplesController < ApplicationController
 
   def arrays2
   end
+
+  def canvas
+  end
 end

@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get 'flex', to: 'examples#flex'
   get 'search', to:'examples#search'
   get 'arrays2', to: 'examples#arrays2'
+  get 'canvas', to: 'examples#canvas'
 end
