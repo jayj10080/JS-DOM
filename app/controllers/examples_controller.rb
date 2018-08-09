@@ -26,4 +26,7 @@ class ExamplesController < ApplicationController
 
   def canvas
   end
+
+  def checkbox
+  end
 end
