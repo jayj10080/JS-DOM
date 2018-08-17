@@ -27,6 +27,10 @@
     <input type = "checkbox">
     <p>Pretty cool</p>
   </div>
-
-
 </div>
+
+<script type="text/javascript">
+  const checkboxes = document.querySelectorAll('.inbox input[type="checkbox"]');
+
+  checkboxes.forEach(checkbox => checkbox.addEventListener('click', handleCheck));
+</script>
