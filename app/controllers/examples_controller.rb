@@ -29,4 +29,7 @@ class ExamplesController < ApplicationController
 
   def checkbox
   end
+
+  def video
+  end
 end

@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get 'arrays2', to: 'examples#arrays2'
   get 'canvas', to: 'examples#canvas'
   get 'checkbox', to: 'examples#checkbox'
+  get 'video', to: 'examples#video'
 end
