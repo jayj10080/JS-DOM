@@ -32,4 +32,7 @@ class ExamplesController < ApplicationController
 
   def video
   end
+
+  def detection
+  end
 end

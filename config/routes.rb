@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   get 'canvas', to: 'examples#canvas'
   get 'checkbox', to: 'examples#checkbox'
   get 'video', to: 'examples#video'
+  get 'detection', to: 'examples#detection'
 end
