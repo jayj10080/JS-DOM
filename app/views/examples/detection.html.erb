@@ -1,0 +1,14 @@
+<head>
+  <script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>
+</head>
+<script>
+  const pressed = [];
+  const secretCode = 'jayjay';
+  window.addEventListener('keyup', (e) => {
+    pressed.push(e.key);
+    pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+    if (pressed.join('').includes(secretCode)) {
+      cornify_add();
+    }
+  });
+</script>
