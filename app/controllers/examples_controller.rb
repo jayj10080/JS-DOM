@@ -35,4 +35,7 @@ class ExamplesController < ApplicationController
 
   def detection
   end
+
+  def slide
+  end
 end

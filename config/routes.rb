@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   get 'checkbox', to: 'examples#checkbox'
   get 'video', to: 'examples#video'
   get 'detection', to: 'examples#detection'
+  get 'slide', to: 'examples#slide'
 end
