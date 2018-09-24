@@ -38,4 +38,7 @@ class ExamplesController < ApplicationController
 
   def slide
   end
+
+  def storage
+  end
 end

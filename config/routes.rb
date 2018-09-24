@@ -12,4 +12,5 @@ Rails.application.routes.draw do
   get 'video', to: 'examples#video'
   get 'detection', to: 'examples#detection'
   get 'slide', to: 'examples#slide'
+  get 'storage', to: 'examples#storage'
 end
