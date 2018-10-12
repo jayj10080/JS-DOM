@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   get 'detection', to: 'examples#detection'
   get 'slide', to: 'examples#slide'
   get 'storage', to: 'examples#storage'
+  get 'shadow', to: 'examples#shadow'
 end

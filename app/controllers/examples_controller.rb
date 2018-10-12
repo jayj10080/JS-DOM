@@ -41,4 +41,7 @@ class ExamplesController < ApplicationController
 
   def storage
   end
+
+  def shadow
+  end
 end
