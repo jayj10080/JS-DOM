@@ -44,4 +44,7 @@ class ExamplesController < ApplicationController
 
   def shadow
   end
+
+  def bands
+  end
 end
