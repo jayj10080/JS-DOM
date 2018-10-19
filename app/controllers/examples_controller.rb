@@ -47,4 +47,7 @@ class ExamplesController < ApplicationController
 
   def bands
   end
+
+  def cam 
+  end
 end

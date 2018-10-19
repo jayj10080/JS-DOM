@@ -15,4 +15,5 @@ Rails.application.routes.draw do
   get 'storage', to: 'examples#storage'
   get 'shadow', to: 'examples#shadow'
   get 'bands', to: 'examples#bands'
+  get 'cam', to: 'examples#cam'
 end
