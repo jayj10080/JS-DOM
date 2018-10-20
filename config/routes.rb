@@ -16,4 +16,5 @@ Rails.application.routes.draw do
   get 'shadow', to: 'examples#shadow'
   get 'bands', to: 'examples#bands'
   get 'cam', to: 'examples#cam'
+  get 'speech', to: 'examples#speech'
 end

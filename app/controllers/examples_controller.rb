@@ -50,4 +50,7 @@ class ExamplesController < ApplicationController
 
   def cam 
   end
+
+  def speech
+  end
 end
