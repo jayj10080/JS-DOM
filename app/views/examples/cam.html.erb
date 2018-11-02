@@ -32,4 +32,12 @@
     const ctx = document.querySelector('.2d');
     const strip = document.querySelector('.strip');
     const snap = document.querySelector('.snap');
+
+    function getVideo() {
+        navigator.mediaDevices.getUserMedia({ video: true, audio: false })
+            .then(localMediaStream => {
+                video.src = window.URL.createObjectURL(localMediaStream);
+                video.play();
+            })
+    }
 </script>
