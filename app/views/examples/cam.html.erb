@@ -65,7 +65,7 @@
     const link = document.createElement('a');
     link.href = data;
     link.setAttribute('download', 'handsome');
-    link.textContent = 'Download Image';
+    link.textContent = `<img src="${data}" alt="Handsome" />`;
     strip.insertBefore(link, strip.firstChild);
   }
 
