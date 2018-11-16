@@ -88,10 +88,18 @@
   function rgbSplit(pixels) {
     for(let i = 0; i < pixels.data.length; i+=4) {
       pixels.data[i - 150] = pixels.data[i + 0];
-      pixels.data[i + 100] = pixels.data[i + 1];
-      pixels.data[i - 150] = pixels.data[i + 2];
+      pixels.data[i + 500] = pixels.data[i + 1];
+      pixels.data[i - 500] = pixels.data[i + 2];
     }
     return pixels;
+  }
+
+  function greenScreen(pixels) {
+    const levels = {};
+
+    [...document.querySelectorAll('.rgb input')].forEach((input) => {
+      levels[input.name] = input.value;    
+    })
   }
 
   getVideo();
