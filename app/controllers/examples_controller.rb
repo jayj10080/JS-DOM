@@ -59,4 +59,7 @@ class ExamplesController < ApplicationController
 
   def location
   end
+
+  def follow
+  end
 end
