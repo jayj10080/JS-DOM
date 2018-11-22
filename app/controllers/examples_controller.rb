@@ -56,4 +56,7 @@ class ExamplesController < ApplicationController
 
   def speech
   end
+
+  def location
+  end
 end

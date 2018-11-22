@@ -18,4 +18,5 @@ Rails.application.routes.draw do
   get 'times', to: 'examples#times'
   get 'cam', to: 'examples#cam'
   get 'speech', to: 'examples#speech'
+  get 'location', to: 'examples#location'
 end
