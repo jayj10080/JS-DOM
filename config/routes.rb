@@ -20,4 +20,5 @@ Rails.application.routes.draw do
   get 'speech', to: 'examples#speech'
   get 'location', to: 'examples#location'
   get 'follow', to: 'examples#follow'
+  get 'sticky', to: 'examples#sticky'
 end

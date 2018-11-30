@@ -62,4 +62,7 @@ class ExamplesController < ApplicationController
 
   def follow
   end
+
+  def sticky
+  end
 end
