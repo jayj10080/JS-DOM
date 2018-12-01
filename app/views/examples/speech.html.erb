@@ -41,3 +41,15 @@
 
 <div class= "words" contenteditable>
 </div>
+
+<script type="text/javascript">
+    window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const recognition = new SpeechRecognition();
+    //interim allows you to see what you're saying in real time
+    recognition.interimResults = true;
+
+    let p = document.createElement('p');
+    const words = document.querySelector('.words');
+    words.appendChild(p);
+</script>
