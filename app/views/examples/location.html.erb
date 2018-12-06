@@ -40,7 +40,7 @@
   .units {
     font-size: 15px;
   }
-  
+
 </style>
 
 <body>
@@ -51,3 +51,12 @@
     <span class="units">KM/H</span>
   </h1>
 </body>
+
+<script type="text/javascript">
+  const array = document.querySelector('.arrow');
+  const speed = document.querySelector('.speed-value');
+
+  navigator.geolocation.watchPosition((data) => {
+    speed.textContent = data.coords.speed;
+  })
+</script>
