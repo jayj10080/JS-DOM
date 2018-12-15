@@ -65,4 +65,7 @@ class ExamplesController < ApplicationController
 
   def sticky
   end
+
+  def synthesis
+  end
 end
