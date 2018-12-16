@@ -130,11 +130,21 @@
     msg.voice = voices.find(voice => voice.name === this.value);
   }
 
-  function toggle() {
+  function toggle(startOver = true) {
     speechSynthesis.cancel();
-    speechSynthesis.speak(msg);
+    if (startOver) {
+      speechSynthesis.speak(msg);
+    }
   }
 
-  speechSynthesis.addEventListener('voiceschanged', populateVoices)
+  function setOption() {
+    msg[this.name] = this.value;
+    toggle();
+  }
+
+  speechSynthesis.addEventListener('voiceschanged', populateVoices);
   voicesDropdown.addEventListener('change', setVoice);
+  options.forEach(option => option.addEventListener('change', setOption));
+  speakButton.addEventListener('click', toggle);
+  stopButton.addEventListener('click', () => toggle(false));
 </script>
