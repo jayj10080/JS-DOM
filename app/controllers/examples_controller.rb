@@ -68,4 +68,7 @@ class ExamplesController < ApplicationController
 
   def synthesis
   end
+
+  def follow2
+  end
 end
