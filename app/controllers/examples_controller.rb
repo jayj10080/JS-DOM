@@ -71,4 +71,7 @@ class ExamplesController < ApplicationController
 
   def follow2
   end
+
+  def drag
+  end
 end
