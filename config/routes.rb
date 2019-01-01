@@ -23,6 +23,6 @@ Rails.application.routes.draw do
   get 'sticky', to: 'examples#sticky'
   get 'synthesis', to: 'examples#synthesis'
   get 'follow2', to: 'examples#follow2'
-  get 'drap', to: 'examples#drag'
+  get 'drag', to: 'examples#drag'
 
 end
