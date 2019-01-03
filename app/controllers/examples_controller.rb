@@ -77,4 +77,7 @@ class ExamplesController < ApplicationController
 
   def speed
   end
+
+  def countdown
+  end
 end
