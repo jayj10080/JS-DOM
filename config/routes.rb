@@ -24,5 +24,6 @@ Rails.application.routes.draw do
   get 'synthesis', to: 'examples#synthesis'
   get 'follow2', to: 'examples#follow2'
   get 'drag', to: 'examples#drag'
+  get 'speed', to: 'examples#speed'
 
 end

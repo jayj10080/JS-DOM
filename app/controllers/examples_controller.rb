@@ -74,4 +74,7 @@ class ExamplesController < ApplicationController
 
   def drag
   end
+
+  def speed
+  end
 end
