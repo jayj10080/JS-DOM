@@ -1,9 +1,9 @@
 <style type="text/css">
   html {
-    box-sizing: border-box;
-    font-size: 10px;
-    background: #8E24AA;
-    background: linear-gradient(45deg, #42a5f5 0%, #478ed1 50%, #0d47a1 100%);
+  box-sizing: border-box;
+  font-size: 10px;
+  background-color: blue;
+  background-color: linear-gradient(45deg,  #42a5f5 0%,#478ed1 50%,#0d47a1 100%);
   }
 
   *, *:before, *:after {
@@ -20,7 +20,7 @@
     font-weight: 100;
     font-size: 20rem;
     margin: 0;
-    color: white;
+    color: black;
     text-shadow: 4px 4px 0 rgba(0,0,0,0.05);
   }
 
@@ -50,13 +50,13 @@
   }
 
   .timer_button {
-    background: none;
+    background-color: none;
     border: 0;
     cursor: pointer;
-    color: white;
+    color: black;
     font-size: 2rem;
     text-transform: uppercase;
-    background: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.1);
     border-bottom: 3px solid rgba(0,0,0,0.2);
     border-right: 1px solid rgba(0,0,0,0.2);
     padding: 1rem;
@@ -65,7 +65,7 @@
 
   .timer_button:hover,
   .timer_button:focus {
-    background: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.2);
     outline: 0;
   }
 
@@ -79,16 +79,14 @@
 
   .display_end-time {
     font-size: 4rem;
-    color: white;
+    color: black;
   }
 
-
 </style>
-
 <body>
   <div class="timer">
     <div class="timer_controls">
-      <button data-time="20" class="timer_button">20secs</button>
+      <button data-time="20" class="timer_button">20 Secs</button>
       <button data-time="300" class="timer_button">Work 5</button>
       <button data-time="900" class="timer_button">Quick 15</button>
       <button data-time="1200" class="timer_button">Snack 20</button>
@@ -110,6 +108,7 @@
     const buttons = document.querySelectorAll('[data-time]');
 
     function timer(seconds) {
+      // clear any existing timers
       clearInterval(countdown);
 
       const now = Date.now();
@@ -119,10 +118,12 @@
 
       countdown = setInterval(() => {
         const secondsLeft = Math.round((then - Date.now()) / 1000);
+        // check if we should stop it!
         if(secondsLeft < 0) {
           clearInterval(countdown);
           return;
         }
+        // display it
         displayTimeLeft(secondsLeft);
       }, 1000);
     }
@@ -130,7 +131,7 @@
     function displayTimeLeft(seconds) {
       const minutes = Math.floor(seconds / 60);
       const remainderSeconds = seconds % 60;
-      const display = `${minutes}:${remainderSeconds < 10 ? '0' : ''}${remainderSeconds}`;
+      const display = `${minutes}:${remainderSeconds < 10 ? '0' : '' }${remainderSeconds}`;
       document.title = display;
       timerDisplay.textContent = display;
     }
@@ -144,7 +145,7 @@
     }
 
     function startTimer() {
-      const seconds = parseInt(this.dataset.time)
+      const seconds = parseInt(this.dataset.time);
       timer(seconds);
     }
 
